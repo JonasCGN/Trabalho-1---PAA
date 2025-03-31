@@ -10,6 +10,8 @@ typedef struct st_args
   int show_values_sorted;
 } args;
 
+
+// Pode usar qualquer algoritmo de ordenacao
 void sortBlock(int *block, int size)
 {
   for (int i = 0; i < size - 1; i++)
@@ -38,9 +40,8 @@ int *blockSort(int *arr, int size, int blockSize, int *sortedSize)
     blockSizes[resultIndex] = currentBlockSize;
 
     for (int j = 0; j < currentBlockSize; j++)
-    {
       blocks[resultIndex][j] = arr[i + j];
-    }
+
 
     sortBlock(blocks[resultIndex], currentBlockSize);
     resultIndex++;
