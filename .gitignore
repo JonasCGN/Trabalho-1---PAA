@@ -3,3 +3,7 @@ venv
 block_sort
 radix_sort
 files/*
+imagem
+*.jpg
+*.png
+*.exe
